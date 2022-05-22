@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+        <link rel="stylesheet" href="mystyle.css">
+        <script src="myscripts.js"></script>
+    </head>
+    <body>
+        <div id="id01" class="modal">
+            <div class="modal-content animate">
+                <div class="imgcontainer">
+                    <span id="cerrar" onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                    <img src="https://i.imgur.com/NGZW7as.jpg" alt="Avatar" class="avatar">
+                </div>
+
+                <div class="container">
+                    <label for="uname" class="fa"><b>Username</b></label>
+                    <input id="username" type="text" placeholder="Enter Username" name="uname" required>
+
+                    <label for="psw" class="fa"><b>Password</b></label>
+                    <input id="pass" type="password" placeholder="Enter Password" name="psw" required>
+
+                    <button id="botonSubmit" class="fa">Login</button>
+                </div>
+
+                <div class="container" style="background-color:#f1f1f1">
+                    <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn fa">Cancel</button>
+                    <span class="psw fa">Forgot <a href="#">password?</a></span>
+                </div>
+            </div>
+        </div>
+        <button class="fa" onclick="document.getElementById('id01').style.display='block'" style="width:auto; position: fixed;">Login</button>
+        <div>
+            <div class="main">
+                <h2>ERP / CRM</h2>
+                <a href="https://www.facebook.com/profile.php?id=100081252043802" class="fa button button1">Configuration</a>
+                <a href="http://172.27.0.244:8069/web#action=55&model=res.partner&view_type=kanban&cids=&menu_id=124" class="fa button button2">Clients</a>
+                <a href="https://www.instagram.com/odelleteam/" class="button button3 fa oculto">Placeholder</a>
+                <a href="https://www.youtube.com/channel/UCctThvj4d-Vz-QluXGY-kmA" class="fa button button5 oculto">Placeholder</a>
+
+                <h2>RRSS</h2>
+                <div>
+                    <a href="https://www.facebook.com/profile.php?id=100081252043802" class="fa-brands fa-facebook button button1 oculto2 oculto"></a>
+                    <a href="https://twitter.com/OdelleTeam" class="fa-brands fa-twitter button button2 oculto2 oculto"></a>
+                    <a href="https://www.instagram.com/odelleteam/" class="fa-brands fa-instagram button button3 oculto2 oculto"></a>
+                    <a href="https://www.youtube.com/channel/UCctThvj4d-Vz-QluXGY-kmA" class="fa-brands fa-youtube button button5 oculto2 oculto"></a>
+                </div>
+                <div>
+                    <a href="https://app.metricool.com/evolution/facebookPage?blogId=1943330&userId=1620521" class="oculto fa button button4">Analytics</a>
+                    <a href="https://app.metricool.com/planner/calendar?blogId=1943330&userId=1620521" class="oculto fa button button4">Planification</a>
+                </div>
+            </div>
+
+            <div class="right">
+                <h2>OTROS</h2>
+                <a href="http://172.27.0.244:8069/" class="fa-solid fa-globe button button5"> Web</a>
+                <a href="https://app.slack.com/client/T03GA29S3BJ/activity-page" class="fa-brands fa-slack button button5"> Slack</a>
+                <a href="#" class="fa-solid fa-robot button button5 oculto2 oculto"> Config</a>
+            </div>
+        </div>
+    </body>
+</html>
