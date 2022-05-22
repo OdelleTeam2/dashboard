@@ -29,33 +29,80 @@
                 </div>
             </div>
         </div>
-        <button class="fa" onclick="document.getElementById('id01').style.display='block'" style="width:auto; position: fixed;">Login</button>
+        <div style="position: fixed">
+            <button id="login" class="fa" onclick="document.getElementById('id01').style.display='block'" style="width:auto; background-color: rgb(157, 61, 201);">Login</button>
+            <br><button id="desconectar" class="fa" style="width:auto; background-color: rgb(201, 61, 61); display: none;">Desc</button>
+        </div>
         <div>
-            <div class="main">
-                <h2>ERP / CRM</h2>
-                <a href="https://www.facebook.com/profile.php?id=100081252043802" class="fa button button1">Configuration</a>
-                <a href="http://172.27.0.244:8069/web#action=55&model=res.partner&view_type=kanban&cids=&menu_id=124" class="fa button button2">Clients</a>
-                <a href="https://www.instagram.com/odelleteam/" class="button button3 fa oculto">Placeholder</a>
-                <a href="https://www.youtube.com/channel/UCctThvj4d-Vz-QluXGY-kmA" class="fa button button5 oculto">Placeholder</a>
-
-                <h2>RRSS</h2>
-                <div>
-                    <a href="https://www.facebook.com/profile.php?id=100081252043802" class="fa-brands fa-facebook button button1 oculto2 oculto"></a>
-                    <a href="https://twitter.com/OdelleTeam" class="fa-brands fa-twitter button button2 oculto2 oculto"></a>
-                    <a href="https://www.instagram.com/odelleteam/" class="fa-brands fa-instagram button button3 oculto2 oculto"></a>
-                    <a href="https://www.youtube.com/channel/UCctThvj4d-Vz-QluXGY-kmA" class="fa-brands fa-youtube button button5 oculto2 oculto"></a>
+            <div id="main" class="main" style="display: none;">
+                <div id="erp" style="display: none;">
+                    <h2>ERP / CRM</h2>
+                    <div style="border: 2px solid #000; border-radius: 16px;">
+                        <a href="https://odelleteam.myshopify.com/admin/customers" class="fa-solid fa-people-arrows-left-right button button5 gerente admin marketing tienda"> Clientes</a>
+                        <a href="https://app.holded.com/team/employees" class="fa-solid fa-screwdriver-wrench button button5 gerente"> Empleados</a>
+                        <a href="https://odelleteam.myshopify.com/admin/products?selectedView=all" class="fa-solid fa-box button button5 marketing admin tienda"> Productos</a>
+                        <a href="https://odelleteam.myshopify.com/admin/products/inventory?location_id=69117477116" class="fa-solid fa-boxes-stacked button button5 admin tienda"> Inventario</a>
+                        <a href="https://odelleteam.myshopify.com/admin/dashboards" class="fa-solid fa-chart-pie button button5 gerente admin"> Estadisticas</a>
+                        <a href="https://odelleteam.myshopify.com/admin/reports" class="fa-solid fa-file-lines  button button5 gerente admin"> Informes</a>
+                        <a href="https://odelleteam.myshopify.com/admin/reports/sales_by_product_name?since=-30d&until=today" class="fa-solid fa-file-invoice-dollar button button5 admin tienda"> Facturas</a>
+                        <a href="https://play.google.com/store/apps/details?id=com.shopify.pos" class="fa-solid fa-credit-card button button5 admin tienda"> TPV</a>
+                    </div>
                 </div>
-                <div>
-                    <a href="https://app.metricool.com/evolution/facebookPage?blogId=1943330&userId=1620521" class="oculto fa button button4">Analytics</a>
-                    <a href="https://app.metricool.com/planner/calendar?blogId=1943330&userId=1620521" class="oculto fa button button4">Planification</a>
+
+                <div id="rrss" style="display: none;">
+                    <h2>RRSS</h2>
+                    <div style="border: 2px solid #000; border-radius: 16px;">
+                        <div>
+                            <a href="https://www.facebook.com/profile.php?id=100081252043802" class="fa-brands fa-facebook button button5 admin marketing"> Facebook</a>
+                            <a href="https://twitter.com/OdelleTeam" class="fa-brands fa-twitter button button5 admin marketing"> Twitter</a>
+                            <a href="https://www.instagram.com/odelleteam/" class="fa-brands fa-instagram button button5 admin marketing"> instagram</a>
+                            <a href="https://www.youtube.com/channel/UCctThvj4d-Vz-QluXGY-kmA" class="fa-brands fa-youtube button button5 admin marketing"> Youtube</a>
+                            <a href="https://www.youtube.com/channel/UCctThvj4d-Vz-QluXGY-kmA" class="fa-brands fa-mailchimp button button5 gerente admin marketing"> Mailchimp</a>
+
+                            <a href="https://app.metricool.com/evolution/facebookPage?blogId=1943330&userId=1620521" class=" fa button button5 gerente admin marketing">Analisis</a>
+                            <a href="https://app.metricool.com/planner/autolist?blogId=1943330&userId=1620521" class=" fa button button5 gerente admin marketing">Planificacion</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="colab" style="display: none;">
+                    <h2>HERRAMIENTAS COLABORATIVAS</h2>
+                    <div style="border: 2px solid #000; border-radius: 16px;">
+                        <a href="https://odellehelp.slack.com/" class="fa-brands fa-slack button button5 gerente admin marketing mantenimiento"> Slack</a>
+                        <a href="https://drive.google.com/drive/u/0/my-drive" class="fa-brands fa-google-drive button button5 gerente admin marketing mantenimiento"> Drive</a>
+                        <a href="https://trello.com/odelleteam2/boards" class="fa-brands fa-trello button button5 gerente admin marketing mantenimiento"> Trello</a>
+                        <a href="https://github.com/OdelleTeam2" class="fa-brands fa-github button button5 admin mantenimiento"> github</a>
+                        <a href="https://calendar.google.com/calendar/u/0/r?pli=1" class="fa-solid fa-calendar button button5 gerente admin marketing tienda mantenimiento"> Calendario</a>
+                        <a href="https://mail.google.com/mail/u/0/?pli=1#inbox" class="fa-solid fa-envelope button button5 gerente admin marketing"> Mail</a>
+                    </div>
                 </div>
             </div>
 
             <div class="right">
-                <h2>OTROS</h2>
-                <a href="http://172.27.0.244:8069/" class="fa-solid fa-globe button button5"> Web</a>
-                <a href="https://app.slack.com/client/T03GA29S3BJ/activity-page" class="fa-brands fa-slack button button5"> Slack</a>
-                <a href="#" class="fa-solid fa-robot button button5 oculto2 oculto"> Config</a>
+                <div id="otros">
+                    <h2>OTROS</h2>
+                    <div style="border: 2px solid #000; border-radius: 16px;">
+                        <a href="https://odelleteam.myshopify.com/" class="fa-solid fa-globe button button5"> Web</a>
+                    </div>
+                </div>
+
+                <div id="callcenter">
+                    <h2>CALLCENTER</h2>
+                    <div style="border: 2px solid #000; border-radius: 16px;">
+                        <a href="https://play.google.com/store/apps/details?id=com.zoiper.android.app" class="fa-brands fa-android button button5"> ZOIPER</a>
+                        <a href="https://apps.apple.com/es/app/zoiper-lite-voip-soft-phone/id438949960" class="fa-brands fa-apple button button5"> ZOIPER</a>
+                    </div>
+                </div>
+
+                <div id="mant" style="display: none;">
+                    <h2>MANTENIMIENTO</h2>
+                    <div style="border: 2px solid #000; border-radius: 16px;">
+                        <a href="https://odelleteam.myshopify.com/admin/pages" class="fa-solid fa-globe button button5 admin mantenimiento"> Web</a>
+                        <a href="" class="fa-solid fa-headset button button5 admin mantenimiento"> Callcenter</a>
+                        <a href="dialogflow.cloud.google.com/#/editAgent/o-nmuk/" class="fa-solid fa-robot button button5 damin mantenimiento"> Bot</a>
+                        <a href="https://odelleteam.myshopify.com/admin/settings/general" class="fa-solid fa-gear button button5 admin mantenimiento"> ERP</a>
+                    </div>
+                </div>
             </div>
         </div>
     </body>
